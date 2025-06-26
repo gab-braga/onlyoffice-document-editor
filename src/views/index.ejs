@@ -8,7 +8,25 @@
 </head>
 
 <body style="font-family: Arial;">
-  <h1>Editor</h1>
+  <h1>OnlyOffice Editor</h1>
+
+  <div id="onlyoffice-editor"></div>
+
+  <script src="https://gabrielbraga07122506262242.onlyoffice.com/static/scripts/sdk/2.0.0/api.js"></script>
+  <script>
+    const config = {
+      "src": "https://gabrielbraga07122506262242.onlyoffice.com",
+      "mode": "editor",
+      "width": "100%",
+      "height": "800px",
+      "frameId": "onlyoffice-editor",
+      "init": true,
+      "id": 2134572,
+      "requestToken": null
+    }
+    
+    window.DocSpace.SDK.init(config);
+  </script>
 </body>
 
 </html>
